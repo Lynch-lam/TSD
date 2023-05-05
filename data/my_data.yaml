@@ -1,0 +1,15 @@
+# Custom data
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+#train: F:/new_project/ctsd/data/CCTSDB/images/train
+#val: F:/new_project/ctsd/data/CCTSDB/images/test
+train: D:/AIPRO/YOLOV5_jiaotong/data/CCTSDB2021/images/train
+val: D:/AIPRO/YOLOV5_jiaotong/data/CCTSDB2021/images/test
+
+# number of classes
+nc: 3
+
+# class names
+names: ["danger", "prohibitory", "mandatory"]
+
