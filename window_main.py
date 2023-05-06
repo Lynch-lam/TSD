@@ -48,7 +48,7 @@ class MainWindow(QTabWidget):
         self.stopEvent.clear()
         # self.model = self.model_load(weights="runs/train/exp/weights/best.pt",
         #                              device=self.device)  # todo 指明模型加载的位置的设备
-        self.model = self.model_load(weights="runs/train/exp2/weights/best.pt",
+        self.model = self.model_load(weights="runs/train/exps/weights/best.pt",
                                      device=self.device)  # todo 指明模型加载的位置的设备
         self.conf_thres = 0.25  # confidence threshold
         self.iou_thres = 0.45  # NMS IOU thresholdv

@@ -1,9 +1,12 @@
 
 <h1>交通标志检测系统</h1>
 
+![img_14.png](img_14.png)
 
+---
 <h3>1.获取项目</h3>
 <h7>在新建的文件夹下进入命令窗口
+
 
 ![img_8.png](img_8.png)
 
@@ -16,8 +19,10 @@ $ git clone https://github.com/Lynch-lam/TSD.git
 ---
 
 <h3>2.数据集下载</h3>
-<h7> 链接：https://pan.baidu.com/s/1N1IqIlZdPQ0-40Wq8FdR2g  提取码：1111
-<h7> 放在项目的同级目录**data**中（不是子目录下），如下图所示
+
+<h6> 链接：https://pan.baidu.com/s/1N1IqIlZdPQ0-40Wq8FdR2g  提取码：1111
+
+<h7> 放在项目的同级目录data中（不是子目录下），如下图所示
 
 ![img_9.png](img_9.png)
 
@@ -48,7 +53,7 @@ conda activate TSD
 
 
 
-<h7>注意Pyotorch和其他库不太一样，Pytorch的安装涉及到conda和cudnn，一般而言，对于30系的显卡，我们的cuda不能小于11，对于10和20系的显卡，一般使用的是cuda10.2。下面给出了30系显卡、30系以下显卡和cpu的安装指令，请大家根据自己的电脑配置自行下载。
+<h7>对于30系的显卡，我们的cuda不能小于11，对于10和20系的显卡，一般使用的是cuda10.2。下面给出了30系显卡、30系以下显卡和cpu的安装指令，根据自己的电脑配置自行下载。
 
 ```bash
 conda install pytorch==1.10.0 torchvision torchaudio cudatoolkit=11.3 # 30系列以上显卡gpu版本pytorch安装指令
@@ -73,13 +78,16 @@ pip install -r requirements.txt
 <h3>7.Pycharm中运行</h3>
 
 1. 添加解释器；
-2. 选择我们刚才创建的虚拟环境；
+2. 选择刚才创建的虚拟环境；
 
 ![img_4.png](img_4.png)
 
+---
+
 3. 右键执行main_window.py；
-4. 
+
 ![img_13.png](img_13.png)
+
 
 ---
 <h3>8.训练模型</h3>
