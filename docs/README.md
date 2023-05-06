@@ -1,8 +1,10 @@
 
+<h1>交通标志检测系统</h1>
 
 
 <h3>1.获取项目</h3>
 <h7>在新建的文件夹下进入命令窗口
+
 ![img_8.png](img_8.png)
 
 <h7>输入命令行获取GITHUB上的项目TSD
@@ -11,13 +13,17 @@ $ git clone https://github.com/Lynch-lam/TSD.git
 ```
 ![img_7.png](img_7.png)
 
+---
+
 <h3>2.数据集下载</h3>
-* 链接：https://pan.baidu.com/s/1N1IqIlZdPQ0-40Wq8FdR2g  提取码：1111
-* 放在项目的同级目录**data**中（不是子目录下），如下图所示
+<h7> 链接：https://pan.baidu.com/s/1N1IqIlZdPQ0-40Wq8FdR2g  提取码：1111
+<h7> 放在项目的同级目录**data**中（不是子目录下），如下图所示
 
 ![img_9.png](img_9.png)
 
-<h3>3.添加国内源加速后续需要第三方库的下载</h3>
+
+<h3>3.添加国内源加速后续需要第三方库的下载
+
 ```bash
 conda config --remove-key channels
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
@@ -27,6 +33,7 @@ conda config --set show_channel_urls yes
 pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 ```
 
+---
 
 <h3>4.创建虚拟环境</h3>
 
@@ -35,7 +42,12 @@ conda create -n TSD python==3.8.5
 conda activate TSD
 ```
 
+---
+
 <h3>5.Pytorch安装</h3>
+
+
+
 <h7>注意Pyotorch和其他库不太一样，Pytorch的安装涉及到conda和cudnn，一般而言，对于30系的显卡，我们的cuda不能小于11，对于10和20系的显卡，一般使用的是cuda10.2。下面给出了30系显卡、30系以下显卡和cpu的安装指令，请大家根据自己的电脑配置自行下载。
 
 ```bash
@@ -48,19 +60,28 @@ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cpuonly # CPU�
 
 ![img_12.png](img_12.png)
 
-<h3>6.其余库安装</h3>
+---
+
+<h3>6.其余库安装
+
 ```bash
 pip install -r requirements.txt
 ```
+
+---
 
 <h3>7.Pycharm中运行</h3>
 
 1. 添加解释器；
 2. 选择我们刚才创建的虚拟环境；
+
 ![img_4.png](img_4.png)
+
 3. 右键执行main_window.py；
+4. 
+![img_13.png](img_13.png)
 
-
+---
 <h3>8.训练模型</h3>
 
 1. 将数据集文件中**my_data.yaml**中的数据路径替换成本地的路径；
