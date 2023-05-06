@@ -3,7 +3,7 @@
 -------------------------------------------------
 Project Name: yolov5
 File Name: window.py.py
-Author: 肆十二
+Author:
 Description：图形化界面，可以检测摄像头、视频和图片文件
 -------------------------------------------------
 """
@@ -175,14 +175,14 @@ class MainWindow(QTabWidget):
         about_widget = QWidget()
         about_layout = QVBoxLayout()
         about_title = QLabel('欢迎使用基于YOLOV5的目标检测系统\n'
-                             '（99调试大礼包加Q: 3045834499）')  # todo 修改欢迎词语
+                             '')  # todo 修改欢迎词语
         about_title.setFont(QFont('楷体', 18))
         about_title.setAlignment(Qt.AlignCenter)
         about_img = QLabel()
         about_img.setPixmap(QPixmap('images/UI/zhu.jpg'))
         about_img.setAlignment(Qt.AlignCenter)
         label_super = QLabel()  # todo 更换作者信息
-        label_super.setText("<a href='https://blog.csdn.net/ECHOSON'>找到我-->肆十二</a>")
+        # label_super.setText("<a href=''></a>")
         label_super.setFont(QFont('楷体', 16))
         label_super.setOpenExternalLinks(True)
         label_super.setAlignment(Qt.AlignRight)
