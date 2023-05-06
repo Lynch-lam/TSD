@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-Project Name: yolov5
+Project Name: TSD
 File Name: window.py.py
 Author:
 Description：图形化界面，可以检测摄像头、视频和图片文件
