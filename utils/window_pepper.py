@@ -190,7 +190,7 @@ class MainWindow(QTabWidget):
         about_title.setFont(QFont('楷体', 18))
         about_title.setAlignment(Qt.AlignCenter)
         about_img = QLabel()
-        about_img.setPixmap(QPixmap('images/UI/qq.png'))
+        # about_img.setPixmap(QPixmap('images/UI/qq.png'))
         about_img.setAlignment(Qt.AlignCenter)
 
         # label4.setText("<a href='https://oi.wiki/wiki/学习率的调整'>如何调整学习率</a>")

@@ -36,7 +36,7 @@ class MainWindow(QTabWidget):
         super().__init__()
         self.setWindowTitle('Target detection system')
         self.resize(1200, 800)
-        self.setWindowIcon(QIcon("images/UI/lufei.png"))
+        self.setWindowIcon(QIcon("images/UI/zyz.png"))
         self.output_size = 480
         self.img2predict = ""
         self.device = 'cpu'
@@ -92,7 +92,7 @@ class MainWindow(QTabWidget):
         self.left_img = QLabel()
         self.right_img = QLabel()
         self.left_img.setPixmap(QPixmap("images/UI/up.jpeg"))
-        self.right_img.setPixmap(QPixmap("images/UI/right.jpeg"))
+        self.right_img.setPixmap(QPixmap("images/UI/haotu1.jpeg"))
         self.left_img.setAlignment(Qt.AlignCenter)
         self.right_img.setAlignment(Qt.AlignCenter)
         mid_img_layout.addWidget(self.left_img)
@@ -174,12 +174,12 @@ class MainWindow(QTabWidget):
         # 主页面
         about_widget = QWidget()
         about_layout = QVBoxLayout()
-        about_title = QLabel('欢迎使用基于YOLOV5的目标检测系统\n'
+        about_title = QLabel('目标检测系统\n'
                              '')  # todo 修改欢迎词语
         about_title.setFont(QFont('楷体', 18))
         about_title.setAlignment(Qt.AlignCenter)
         about_img = QLabel()
-        about_img.setPixmap(QPixmap('images/UI/zhu.jpg'))
+        about_img.setPixmap(QPixmap('images/UI/ZYZ2.png'))
         about_img.setAlignment(Qt.AlignCenter)
         label_super = QLabel()  # todo 更换作者信息
         # label_super.setText("<a href=''></a>")
@@ -198,9 +198,9 @@ class MainWindow(QTabWidget):
         self.addTab(img_detection_widget, '图片检测')
         self.addTab(vid_detection_widget, '视频检测')
 
-        self.setTabIcon(0, QIcon('images/UI/lufei.png'))
-        self.setTabIcon(1, QIcon('images/UI/lufei.png'))
-        self.setTabIcon(2, QIcon('images/UI/lufei.png'))
+        self.setTabIcon(0, QIcon('images/UI/zyz.png'))
+        self.setTabIcon(1, QIcon('images/UI/zyz.png'))
+        self.setTabIcon(2, QIcon('images/UI/zyz.png'))
 
     # 图片上传
     def upload_img(self):
@@ -216,7 +216,7 @@ class MainWindow(QTabWidget):
             self.img2predict = fileName
             self.left_img.setPixmap(QPixmap("images/tmp/upload_show_result.jpg"))
             # todo 上传图片之后右侧的图片重置，
-            self.right_img.setPixmap(QPixmap("images/UI/right.jpeg"))
+            self.right_img.setPixmap(QPixmap("images/UI/haotu1.jpeg"))
 
     # 图片检测
     def detect_img(self):
