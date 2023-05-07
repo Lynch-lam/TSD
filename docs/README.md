@@ -5,8 +5,7 @@
 
 ---
 <h3>1.获取项目</h3>
-<h7>在新建的文件夹下进入命令窗口
-
+<h7>在新建的文件夹下进入命令窗口</h7>
 
 ![img_8.png](img_8.png)
 
@@ -20,14 +19,17 @@ $ git clone https://github.com/Lynch-lam/TSD.git
 
 <h3>2.数据集下载</h3>
 
-<h6> 链接：https://pan.baidu.com/s/1N1IqIlZdPQ0-40Wq8FdR2g  提取码：1111
+<h6> 链接：https://pan.baidu.com/s/1k8kYh6hJAQuAm_OnFhXNxA  提取码：1111</h6>
 
-<h7> 放在项目的同级目录data中（不是子目录下），如下图所示
+<h6> 放在项目的同级目录data中（不是子目录下），如下图所示</h6>
 
 ![img_9.png](img_9.png)
 
+---
 
-<h3>3.添加国内源加速后续需要第三方库的下载
+<h3>3.添加国内镜像源
+
+<h6>在Anaconda prompt中，添加国内源加速后续需要第三方库的下载
 
 ```bash
 conda config --remove-key channels
@@ -82,7 +84,6 @@ pip install -r requirements.txt
 
 ![img_4.png](img_4.png)
 
----
 
 3. 右键执行main_window.py；
 
