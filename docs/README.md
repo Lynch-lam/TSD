@@ -19,7 +19,7 @@ $ git clone https://github.com/Lynch-lam/TSD.git
 
 <h3>2.数据集下载</h3>
 
-<h6> 链接：https://pan.baidu.com/s/1k8kYh6hJAQuAm_OnFhXNxA  提取码：1111</h6>
+<h6> 链接：https://pan.baidu.com/s/1zaaoar7GVd-eip8GiQ3JpA   提取码：6666</h6>
 
 <h6> 放在项目的同级目录data中（不是子目录下），如下图所示</h6>
 
@@ -109,3 +109,6 @@ pip install -r requirements.txt
 2. 执行go_test.py测试
 
 
+<h3>10.补充</h3>
+
+1. 自动装包的时候，numpy版本可能会过高（如运行时候报错），降低版本即可
